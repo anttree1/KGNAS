@@ -10,14 +10,20 @@
 ### material.py: Store the search space content.
 ### model_search.py: Model class.
 ### operations.py: All candidate operation.
-### 
+### para_ab.py & para_w.py & para_w12.py: Parameter sensitivity experiment.
+### para_sw.py & test_SW: The small-worldness experiment.
+### pso_model.py: The main program for architecture search.
+### test_KDE.py: Experiments with KDE graphs.
+### test_SC.py: Difference matrix experiment.
+### test_model.py: Test architecture.
+### utils.py: Utility classes.
 
 
 ## Operating Guide
-### In pso_model.py, set the parameters you need in args. 
-### In test_model, set the classifier you need to evaluate the individual fitness. 
-### The list_ind variable of test_ADA.py contains the vector of the data augmentation strategy found, and the model is set to the classifier used to select the test.
-### In material.py, set up other possible sets of brain regions.
+### In model_search.py, you can modify the model class.
+### In fitness_model.py, you can modify the fitness evaluation strategy.
+### In pso_model.py, set the parameters you need and then search.
+### In test_model, Enter the search results and evaluate the performance. 
 
 ## Dataset acquisition
 ### ABIDE I: https://fcon_1000.projects.nitrc.org/indi/abide/abide_II.html
